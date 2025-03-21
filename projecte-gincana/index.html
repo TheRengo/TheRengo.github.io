@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gincana Virtual d'Aniversari - Una experiència interactiva per a celebrar moments especials.">
+    <title>Gincana Virtual</title>
+    <!-- Enllaç correcte al CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Gincana Virtual d'Aniversari</h1>
+        </header>
+
+        <!-- Contenedor de preguntas -->
+        <section id="question-container" aria-live="polite"></section>
+
+        <!-- Contenedor de resultados (QR) - OCULTO por defecto -->
+        <section id="result-container" class="hidden" aria-live="assertive">
+            <h2>Has completat totes les preguntes! 🎉</h2>
+            <p>Escaneja el QR per obtenir el teu regal:</p>
+            <img class="qr-animate" src="assets/qr.png" alt="Codi QR per obtenir el regal">
+        </section>
+
+        <!-- Fallback si JS está desactivado -->
+        <noscript>
+            <p>Per favor, activa JavaScript per a poder interactuar amb aquesta pàgina.</p>
+        </noscript>
+    </main>
+
+    <!-- Enllaç correcte al JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
